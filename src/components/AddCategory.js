@@ -6,6 +6,7 @@ const AddCategory = ({ setCategories }) => {
     const [ inputValue, setInputValue ] = useState('');
 
     const handleInputChange = (e) => {
+        console.log("handleInputChange fired!")
         setInputValue(e.target.value);
     };
 

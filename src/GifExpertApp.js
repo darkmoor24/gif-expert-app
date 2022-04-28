@@ -3,8 +3,9 @@ import AddCategory  from "./components/AddCategory";
 import { GifGrid } from './components/GifGrid';
 // import PropTypes from "prop-types";
 
-const GifExpertApp = () => {
-    const [ categories, setCategories ] = useState([]);
+const GifExpertApp = ({ defaultCategories }) => {
+    const [ categories, setCategories ] = useState(defaultCategories);
+    // const [ categories, setCategories ] = useState(['One punch]);
 
     return(
         <>
